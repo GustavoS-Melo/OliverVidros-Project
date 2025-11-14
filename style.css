@@ -1,0 +1,13 @@
+/* HEADER */
+
+header {
+    background-image: url('./assets/header-pic.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    padding: 90px;
+}
+
+header p {
+    font-size: 40px;
+} 
