@@ -272,3 +272,38 @@ h3{
 #radio-servico4:checked ~ .first-servico{
     margin-left: -75%;
 }
+
+/* COMENTARIOS*/
+
+.comentarios{
+    margin-bottom: 100px;
+}
+.comentarios h1{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.comentarios #texto-comentario{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.opinioes{
+    width: 1200px;
+    margin-left: 300px;
+}
+.comentario{
+    display: flex;
+}
+
+/* CATALOGO */
+
+.catalogo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+.catalogo a{
+    color: black;
+}
