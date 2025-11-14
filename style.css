@@ -198,3 +198,26 @@ h3{
 .slide:hover .text{
     opacity: 1;
 }
+
+/* LINK SOBRE */
+
+.sobre{
+    margin-bottom: 50px;
+}
+.sobre h1{
+    margin-left: 150px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.sobre p{
+    margin-left: 200px;
+    font-size: 25px;
+}
+.sobre p strong{
+    font-family: 'jost', 'sans-serif';
+}
+.sobre a{
+    color: black;
+}
