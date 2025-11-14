@@ -221,3 +221,54 @@ h3{
 .sobre a{
     color: black;
 }
+
+/* SAIBA MAIS HOME */
+
+.saiba-mais{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.saiba-mais h1{
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.slider-servico{
+    margin: 0 auto;
+    width: 70%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.slides-servico{
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.slides-servico input{
+    display: none;
+}
+
+.slide-servico{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide-servico img{
+    width: 100%;
+}
+
+
+#radio-servico1:checked ~ .first-servico{
+    margin-left: 0;
+}
+#radio-servico2:checked ~ .first-servico{
+    margin-left: -25%;
+}
+#radio-servico3:checked ~ .first-servico{
+    margin-left: -50%;
+}
+#radio-servico4:checked ~ .first-servico{
+    margin-left: -75%;
+}
