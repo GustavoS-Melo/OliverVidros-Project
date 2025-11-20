@@ -1,51 +1,112 @@
 /* FOOTER */
-
-footer{
+footer {
     background-color: #4e4e4e;
     color: white;
+    padding: 40px 20px;
 }
-footer ul li a{
+
+footer a {
     text-decoration: none;
     color: white;
 }
 
-.logo{
-    width: 300px;
-    margin-left: 100px;
-}
-.content-ft{
+.content-ft {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.content-ft .logo ul{
-    list-style-type: none;
-}
-.content-ft .logo ul li{
-    float: left;
-    font-size: 26px;
-    margin-left: 10px;
-    
-}
-.content-ft .logo .logo-img{
-    margin-bottom: 20px;
+/* COLUNA 1 - LOGO */
+.logo {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.content-ft .links{
-    margin: auto;
+.logo-img img {
+    width: 180px;
 }
-.content-ft .links ul li {
-    padding-bottom: 20px;
-    
+
+.logo ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-.content-ft .links2{
-    margin: auto;
+
+.logo ul li {
+    font-size: 30px;
 }
-.content-ft .links2 ul li {
-    padding-bottom: 20px;
-    
+
+
+
+/* COLUNA 2 E 3 - LINKS */
+.links,
+.links2 {
+    flex: 1;
+    min-width: 160px;
 }
-.content-ft .direitos{
-    margin: auto;
-    margin-right: 100px;
+
+.links ul,
+.links2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li,
+.links2 ul li {
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+
+/* COLUNA 4 - DIREITOS */
+.direitos {
+    flex: 1;
+    min-width: 220px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .content-ft {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .logo,
+    .links,
+    .links2,
+    .direitos {
+        margin: 0 auto;
+    }
+
+    .logo ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .links ul li,
+    .links2 ul li {
+        font-size: 16px;
+    }
+
+    .direitos {
+        font-size: 14px;
+    }
 }

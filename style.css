@@ -4,7 +4,6 @@ header {
     background-image: url('./assets/header-pic.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
     padding: 90px;
 }
 
@@ -306,4 +305,111 @@ h3{
 }
 .catalogo a{
     color: black;
+}
+
+                    /* MEDIA QUERY*/
+
+/* RESPONSIVIDADE GERAL */
+
+@media (max-width: 1200px) {
+
+    header p {
+        width: 70%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .vidros-home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* TABLET 768px */
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .slider {
+        width: 85%;
+    }
+
+    .sobre h1,
+    .saiba-mais h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .sobre p {
+        margin-left: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .slider-servico {
+        width: 100%;
+    }
+}
+
+/* CELULAR 480px */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+    .vidros-home .content .info h1 {
+        font-size: 28px;
+    }
+
+    .catalogo {
+        font-size: 20px;
+    }
+
+    footer .content-ft {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* CELULAR PEQUENO 360px */
+@media (max-width: 360px) {
+
+    header h1 { font-size: 26px; }
+
+    header p,
+    .info p,
+    .sobre p {
+        font-size: 16px;
+    }
+
+    .catalogo {
+        font-size: 16px;
+    }
 }
