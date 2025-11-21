@@ -1,28 +1,58 @@
+/* FONTE HOME PAGE*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+    --font-base: 'Jost', sans-serif;
+    --font-title: 'Jost', serif;
+
+    --color-text: #2f2f2f;
+    --color-soft: #555;
+}
+
 /* HEADER */
 
-header {
+.home-header {
     background-image: url('./assets/header-pic.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 90px;
+    background-position: center;
+    height: 800px;
+    padding: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header p {
-    font-size: 40px;
-    color: white;
-    text-align: justify;
-    margin-left: 80px;
-    padding-top: 110px;
-    width: 850px;
-    font-weight: 300;
+/* HEADER OVERLAY */
+.home-header .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.45);
+    z-index: 0;
 }
 
-header h1{
-    font-size: 60px;
+.home-header .header-content {
+    position: relative;
+    z-index: 2;
     text-align: center;
-    margin-top: 50px;
-    font-weight: 700;
-    color: white;
+    max-width: 900px;
+}
+
+.home-header h1 {
+    margin-bottom: 30px;
+    font-family: var(--font-title);
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+
+.home-header p {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #f2f2f2;
 }
 
 /* CONTENT  DISPLAY */
@@ -211,11 +241,14 @@ h3{
 }
 
 .sobre p{
+    font-family: var(--font-base);
+    color: var(--color-soft);
+    font-weight: 200;
     margin-left: 200px;
     font-size: 25px;
 }
 .sobre p strong{
-    font-family: 'jost', 'sans-serif';
+    font-family: var(--font-base);
 }
 .sobre a{
     color: black;
@@ -298,9 +331,12 @@ h3{
 /* CATALOGO */
 
 .catalogo{
+    font-family: var(--font-base);
+    color: var(--color-soft);
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 30px;
+    font-weight: 200;
     text-align: center;
 }
 .catalogo a{
@@ -325,17 +361,24 @@ h3{
   z-index:1600;
   text-decoration:none;
 }
-                    /* MEDIA QUERY*/
 
-/* RESPONSIVIDADE GERAL */
+/* Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.7s ease-out;
+}
 
-@media (max-width: 1200px) {
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-    header p {
-        width: 70%;
-        margin-left: 0;
-        text-align: center;
-    }
+/* RESPONSIVIDADE*/
+
+/* 1024px */
+
+@media (max-width: 1024px) {
 
     .content {
         margin-left: 0;
@@ -351,18 +394,19 @@ h3{
 /* TABLET 768px */
 @media (max-width: 768px) {
 
-    header {
-        height: auto;
+    .home-header {
+        height: 600px;
         padding: 40px 20px;
     }
 
-    header h1 {
-        font-size: 40px;
+    .home-header h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
     }
 
-    header p {
-        font-size: 22px;
-        padding-top: 10px;
+    .home-header p {
+        font-size: 20px;
+        padding: 0 10px;
     }
 
     .slider {
@@ -389,11 +433,11 @@ h3{
 /* CELULAR 480px */
 @media (max-width: 480px) {
 
-    header h1 {
-        font-size: 30px;
+    .home-header h1 {
+        font-size: 32px;
     }
 
-    header p {
+    .home-header p {
         font-size: 18px;
     }
 
