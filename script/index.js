@@ -9,17 +9,17 @@ menuBtn.addEventListener('click', () => {
 
 
 //FADE IN SCRIPT
-    
-        const fadeElements = document.querySelectorAll(".fade-in");
 
-        function checkFade() {
-            fadeElements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    el.classList.add("show");
-                }
-            });
+const fadeElements = document.querySelectorAll(".fade-in");
+
+function checkFade() {
+    fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            el.classList.add("show");
         }
+    });
+}
 
-        window.addEventListener("scroll", checkFade);
-        window.addEventListener("load", checkFade);
+window.addEventListener("scroll", checkFade);
+window.addEventListener("load", checkFade);
