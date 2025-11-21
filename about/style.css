@@ -10,18 +10,35 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Título */
+/* Overlay */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(1px);
+    z-index: 0;
+}
+
+header h1, header h3 {
+    position: relative;
+    z-index: 1;
+}
+
 header h1 {
     text-align: center;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
-    padding: 0;
 }
 
-/* Subtítulo */
 header h3 {
     width: 100%;
     max-width: 700px;
@@ -35,10 +52,12 @@ header h3 {
 /* HISTORY */
 
 .history {
+    width: 100%;
     max-width: 900px;
-    margin-left: 150px;
+    margin: 0 auto;
     padding: 80px 20px;
     text-align: justify;
+    line-height: 1.6;
 }
 
 .history h1 {
@@ -48,7 +67,6 @@ header h3 {
 
 .history p {
     font-size: 25px;
-    line-height: 1.5;
 }
 
 .history li {
@@ -60,125 +78,159 @@ header h3 {
     width: 30px;
 }
 
+/* CARDS */
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.value-item {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    background: white;
+}
+
+.value-item h1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+}
+
+.value-item h1 img {
+    width: 45px;
+}
+
+.value-item p, .value-item ul li {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.value-item ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.value-item ul li::before {
+    content: "• ";
+    color: #2b59ff;
+    font-weight: bold;
+}
+
+/* ANIMAÇÃO FADE IN */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* WHATSAPP LINK */
+
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#25d366;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 20px rgba(37,211,102,0.18);
+  z-index:1600;
+  text-decoration:none;
+}
 
 /* RESPONSIVIDADE */
 
-/* 1024px */
-
+/*1024px*/
 @media (max-width: 1024px) {
-
-    header {
-        height: 600px;
-        padding: 50px 20px;
+    header { 
+        height: 600px; 
     }
-
-    header h1 {
-        font-size: 48px;
+    header h1 { 
+        font-size: 48px; 
     }
-
-    header h3 {
-        font-size: 32px;
-        max-width: 90%;
+    header h3 { 
+        font-size: 32px; 
     }
-
-    .history {
-        margin: 0 auto;
-        max-width: 750px;
-        padding: 60px 20px;
+    .history{
+        width: 600px;
     }
-
     .history p, .history li {
         font-size: 22px;
     }
-
-    .history h1 {
-        font-size: 35px;
-    }
 }
 
-/* 768px */
-
+/*768px*/
 @media (max-width: 768px) {
-    
-    header {
-        height: 500px;
+    header { 
+        height: 500px; 
     }
-
-    header h1 {
-        font-size: 38px;
+    header h1 { 
+        font-size: 38px; 
     }
-
-    header h3 {
-        font-size: 26px;
-    }
-
-    .history {
-        margin: 0 auto;
-        padding: 50px 20px;
+    header h3 { 
+        font-size: 26px; 
     }
 
     .history p, .history li {
         font-size: 20px;
     }
-
-    .history h1 {
-        font-size: 32px;
-    }
 }
 
-/* 480px */
-
+/*480px*/
 @media (max-width: 480px) {
-
-    header {
-        height: 420px;
-        padding: 30px 15px;
+    header { 
+        height: 420px; 
     }
-
-    header h1 {
-        font-size: 30px;
+    header h1 { 
+        font-size: 30px; 
     }
-
-    header h3 {
-        font-size: 20px;
-        max-width: 95%;
+    header h3 { 
+        font-size: 20px; 
     }
-
-    .history {
-        margin: 0 auto;
-        padding: 40px 15px;
+    .history{
+        width: 400px;
     }
-
     .history p, .history li {
         font-size: 18px;
-    }
-
-    .history h1 {
-        font-size: 26px;
     }
 }
 
-/* 360px */
-
+/*360px*/
 @media (max-width: 360px) {
-
-    header h1 {
-        font-size: 26px;
+    header h1 { 
+        font-size: 26px; 
     }
-
-    header h3 {
-        font-size: 18px;
+    header h3 { 
+        font-size: 18px; 
     }
-
     .history{
-        margin: 0 auto;
+        width: 300px;
     }
-    
-    .history p, .history li {
-        font-size: 16px;
-    }
-
-    .history h1 {
-        font-size: 24px;
+    .history p, .history li { 
+        font-size: 16px; 
     }
 }
