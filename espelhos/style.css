@@ -1,0 +1,54 @@
+h1{
+    margin: 50px 100px;
+    font-size: 40px;
+}
+
+/*header*/
+header{
+    background-image: url(../assets/espelhos/header/header.svg);
+    padding: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+}
+header h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 250px;
+}
+
+/*ESPELHO*/
+
+.container{
+    display: flex; 
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.container img{
+    border-radius: 5px;
+}
+.tabela{
+    width: 60%;
+}
+
+.tabela p{
+    width: 700px;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+
+/* CATALOGO */
+
+.catalogo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+.catalogo a{
+    color: black;
+}
