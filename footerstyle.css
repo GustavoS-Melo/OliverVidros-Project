@@ -50,20 +50,17 @@ footer a {
 
 
 /* COLUNA 2 E 3 - LINKS */
-.links,
-.links2 {
+.links, .links2 {
     flex: 1;
     min-width: 160px;
 }
 
-.links ul,
-.links2 ul {
+.links ul, .links2 ul {
     list-style: none;
     padding: 0;
 }
 
-.links ul li,
-.links2 ul li {
+.links ul li, .links2 ul li {
     padding: 12px 0;
     font-size: 18px;
 }
@@ -81,6 +78,20 @@ footer a {
 
 /*RESPONSIVIDADE*/
 
+/* 1024px */
+@media (max-width: 1024px) {
+    .content-ft {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .direitos {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/*768px*/
 @media (max-width: 768px) {
     .content-ft {
         flex-direction: column;
@@ -88,10 +99,7 @@ footer a {
         gap: 30px;
     }
 
-    .logo,
-    .links,
-    .links2,
-    .direitos {
+    .logo, .links, .links2, .direitos {
         margin: 0 auto;
     }
 
@@ -100,9 +108,9 @@ footer a {
     }
 }
 
+/*480px*/
 @media (max-width: 480px) {
-    .links ul li,
-    .links2 ul li {
+    .links ul li, .links2 ul li {
         font-size: 16px;
     }
 

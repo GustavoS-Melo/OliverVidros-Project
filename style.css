@@ -1,14 +1,14 @@
 /* FONTE HOME PAGE*/
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 
 :root {
     --font-base: 'Jost', sans-serif;
     --font-title: 'Jost', serif;
 
-    --color-text: #2f2f2f;
-    --color-soft: #555;
+    --color-text: #222;
+    --color-soft: #777;
+    --primary: #115b66;
 }
-
 /* HEADER */
 
 .home-header {
@@ -330,17 +330,17 @@ h3{
 
 /* CATALOGO */
 
-.catalogo{
-    font-family: var(--font-base);
-    color: var(--color-soft);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 30px;
-    font-weight: 200;
-    text-align: center;
+.catalogo { 
+  padding: 28px 0; 
+  text-align:center; 
+}
+.catalogo p { 
+  font-size:18px; 
+  color:var(--color-soft); 
 }
 .catalogo a{
-    color: black;
+    color: var(--primary);
+    font-weight:600;
 }
 
 /* WHATSAPP LINK */
@@ -413,8 +413,7 @@ h3{
         width: 85%;
     }
 
-    .sobre h1,
-    .saiba-mais h1 {
+    .sobre h1, .saiba-mais h1 {
         text-align: center;
         margin-left: 0;
     }
@@ -463,15 +462,18 @@ h3{
 /* CELULAR PEQUENO 360px */
 @media (max-width: 360px) {
 
-    header h1 { font-size: 26px; }
+    header h1 { 
+        font-size: 26px; 
+    }
 
-    header p,
-    .info p,
-    .sobre p {
+    header p, .info p, .sobre p {
         font-size: 16px;
     }
 
     .catalogo {
         font-size: 16px;
+    }
+    .whatsapp-float{
+        display: none;
     }
 }

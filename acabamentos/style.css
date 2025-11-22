@@ -1,11 +1,12 @@
-/* variáveis*/
-:root{
-  --primary: #115b66;
-  --accent: #2b59ff;
-  --muted: #f4f6fb;
-  --card-bg: #ffffff;
-  --text: #222;
-  --soft: #777;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-base: 'Jost', sans-serif;
+    --font-title: 'Jost', serif;
+
+    --color-text: #222;
+    --color-soft: #777;
+    --primary: #115b66;
 }
 
 * { 
@@ -53,15 +54,15 @@
 
 .header-acabamentos h1{
   margin:0 0 50px 0;
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: var(--font-title);
 }
 
 .header-acabamentos h2{
   margin:0 0 20px 0;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 36px;
+  font-weight: 200;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -185,8 +186,7 @@
 }
 .catalog-link { 
   color:var(--primary); 
-  font-weight:600; 
-  text-decoration:underline; 
+  font-weight:600;
 }
 
 /* WHATSAPP LINK */
