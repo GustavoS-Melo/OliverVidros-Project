@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oliver Vidros|Contato</title>
+    <title>Oliver Vidros | Contato</title>
     <link rel="shortcut icon" href="../assets/LOGO_SEM_FUNDO 1.png" type="image/x-icon">
     <!-- STYLES -->
     <link rel="stylesheet" href="../navstyle.css">
@@ -13,104 +14,137 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+
     <!--NAVBAR-->
-<nav class="navbar">
-    <a href="../index.html" class="img-logo"><img src="../assets/logo.png" alt=""></a>
+    <nav class="navbar">
+        <a href="../index.html" class="img-logo"><img src="../assets/logo.png" alt=""></a>
 
-    <div class="menu-btn" id="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-    <ul class="nav-links" id="nav-links">
-        <li><a href="../about/about.html">Sobre nós</a></li>
-        <li><a href="../vidros/vidros.html">Vidros</a></li>
-        <li><a href="../espelhos/espelhos.html">Espelhos</a></li>
-        <li><a href="../perfils/perfil.html">Portas de alumínio</a></li>
-        <li><a href="../acabamentos/acabamentos.html">Acabamentos</a></li>
-        <li><a href="./contato.html">Contato</a></li>
-    </ul>
-</nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../about/about.html">Sobre nós</a></li>
+            <li><a href="../vidros/vidros.html">Vidros</a></li>
+            <li><a href="../espelhos/espelhos.html">Espelhos</a></li>
+            <li><a href="../perfils/perfil.html">Portas de alumínio</a></li>
+            <li><a href="../acabamentos/acabamentos.html">Acabamentos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-<!--FORMULARIO-->
+    <!--HEADER-->
 
-<section>
+    <header class="header-contato fade-in">
+        <div class="overlay"></div>
+
+        <div class="header-content">
+            <h1>Quer <span>Entrar em Contato Conosco?</span></h1>
+            <h3>Estamos à disposição para atender você com excelência.</h3>
+        </div>
+    </header>
+
+    <!--FORMULARIO-->
+
+<section class="contato-wrapper fade-in">
     <div class="formulario">
-        <div class="form">
-            <h1>CONTATO</h1>
+
+        <!-- FORM -->
+        <div class="form contato-form">
+            <h1>Entre em contato</h1>
+
             <form action="">
-                <label for="">Nome:</label> <br>
-                <input id="nome" type="text" placeholder="Insira seu nome" required> <br>
+                <label for="name">Nome</label>
+                <input id="name" type="text" placeholder="Insira seu nome" required>
 
-                <label for="">Email:</label><br>
-                <input id="email" type="email" placeholder="nome@email.com" required><br>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="seuemail@email.com" required>
 
-                <label for="">Telefone:</label><br>
-                <input id="telefone" type="text" placeholder="(XX) XXXXX-XXXX" required><br>
+                <label for="phone">Telefone</label>
+                <input id="phone" type="text" placeholder="(XX) XXXXX-XXXX" required>
 
-                <label for="">Interesse:</label><br>
-                <textarea rows="10" id="texto" type="text" placeholder="Por favor, descreva seu interesse ou duvida"></textarea><br>
+                <label for="text">Como podemos ajudar?</label>
+                <textarea rows="7" id="text" placeholder="Descreva seu interesse ou dúvida"></textarea>
 
-                <button>ENVIAR</button>
+                <button class="btn-enviar">Enviar</button>
             </form>
         </div>
 
-        <div class="form-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8083171394633!2d-49.162462700000006!3d-25.4446712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcef79b6ac80dd%3A0x76ec5dd3480bc1af!2sOliver%20Vidros!5e0!3m2!1spt-BR!2sbr!4v1748367524701!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Endereço: R. Maysa Matarazzo, 469 - Maria Antonieta, 
-                Pinhais - PR, CEP: 83331-200 <br><br>
-                <i class="fa-solid fa-phone"></i>
-                Telefone: (41) 3669-7178
-            </p>
+        <!-- MAPA -->
+        <div class="form-map contato-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8083171394633!2d-49.162462700000006!3d-25.4446712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcef79b6ac80dd%3A0x76ec5dd3480bc1af!2sOliver%20Vidros!5e0!3m2!1spt-BR!2sbr!4v1748367524701!5m2!1spt-BR!2sbr"
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div class="map-info">
+                <p>
+                    <br><br>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Endereço: R. Maysa Matarazzo 469 - Maria Antonieta, Pinhais - PR, 83331-200 <br>
+                    <br>
+                    <i class="fa-solid fa-phone"></i>
+                    Telefone: (41) 3669-7178
+                </p>
+            </div>
         </div>
+
     </div>
 </section>
+    
+<!-- WHATSAPP LINK -->
+  <a target ="_blank" href="https://wa.me/5541997302744?text=Olá, vim através de seu site e gostaria de mais informações sobre seus produtos" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-<!--FOOTER-->
-<footer>
-    <div class="content-ft">
-        <div class="logo">
-            <div class="logo-img">
-                <img src="../assets/logo-footer.svg" alt="">
+    <!--FOOTER-->
+    <footer>
+        <div class="content-ft">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="../assets/logo-footer.svg" alt="">
+                </div>
+                <ul>
+                    <li class="icon"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="icon"><a href=""><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a></li>
+                </ul>
             </div>
-            <ul>
-                <li class="icon"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="icon"><a href=""><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a></li>
-            </ul>
+            <div class="links">
+                <ul>
+                    <li><a href="../about/about.html">SOBRE</a></li>
+                    <li><a href="../vidros/vidros.html">VIDROS</a></li>
+                    <li><a href="../espelhos/espelho.html">ESPELHOS</a></li>
+
+                </ul>
+            </div>
+            <div class="links2">
+                <ul>
+                    <li><a href="../perfils/perfil.html">PORTAS DE ALUMINIO</a></li>
+                    <li><a href="../acabamentos/acabamentos.html">ACABAMENTOS</a></li>
+                    <li><a href="./contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+            <div class="direitos">
+                <P>
+                    &#169 2025 OLIVER LTDA - CNPJ: 79.782.959/0001-86 <br></br>
+                    Todos os Direitos Reservados.
+                </P>
+            </div>
         </div>
-        <div class="links">
-            <ul>
-                <li><a href="../about/about.html">SOBRE</a></li>
-                <li><a href="../vidros/vidros.html">VIDROS</a></li>
-                <li><a href="../espelhos/espelho.html">ESPELHOS</a></li>
-                
-            </ul>
-        </div>
-        <div class="links2">
-            <ul>
-                <li><a href="../perfils/perfil.html">PORTAS DE ALUMINIO</a></li>
-                <li><a href="../acabamentos/acabamentos.html">ACABAMENTOS</a></li>
-                <li><a href="./contato.html">CONTATO</a></li>
-            </ul>
-        </div>
-        <div class="direitos">
-        <P>
-            &#169 2025 OLIVER LTDA - CNPJ: 79.782.959/0001-86 <br></br>
-            Todos os Direitos Reservados. 
-        </P>
-    </div>
-    </div>
-</footer>
-<!--SCRIPTS-->
-<script src="../script/index.js"></script>
-<script src="https://kit.fontawesome.com/af0ad01426.js" crossorigin="anonymous"></script>
-<!--SCRIPTS-->
+    </footer>
+    <!--SCRIPTS-->
+    <script src="../script/index.js"></script>
+    <script src="https://kit.fontawesome.com/af0ad01426.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
