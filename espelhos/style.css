@@ -1,54 +1,186 @@
-h1{
-    margin: 50px 100px;
-    font-size: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-base: 'Jost', sans-serif;
+    --font-title: 'Jost', serif;
+
+    --color-text: #222;
+    --color-soft: #777;
+    --primary: #115b66;
 }
 
-/*header*/
-header{
-    background-image: url(../assets/espelhos/header/header.svg);
-    padding: 120px;
+/*HEADER*/
+.header-espelhos {
+    background-image: url('../assets/espelhos/header/header.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 700px;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-espelhos .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.header-espelhos .header-content {
+    position: relative;
+    z-index: 2;
     text-align: center;
 }
-header h1{
+
+.header-espelhos h1 {
     text-align: center;
     font-size: 60px;
-    margin-top: 250px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: var(--font-title);
 }
 
-/*ESPELHO*/
+.header-espelhos h3{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    color: white;
+    font-family: var(--font-base);
+}
 
-.container{
-    display: flex; 
+/*ESPELHOS*/
+.container {
+    display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-bottom: 50px;
-}
-.container img{
-    border-radius: 5px;
-}
-.tabela{
-    width: 60%;
+    gap: 40px;
+    padding: 80px;
 }
 
-.tabela p{
-    width: 700px;
+.container img {
+    width: 480px;
+    border-radius: 8px;
+}
+
+.tabela p {
+    font-size: 22px;
+    color: var(--color-text);
+    max-width: 650px;
     text-align: justify;
-    font-size: 20px;
-    margin-top: 150px;
+    margin-top: 40px;
+    line-height: 1.6;
+    font-family: var(--font-base);
 }
 
+/*BENEFICIOS*/
+.beneficios {
+    padding: 60px 80px;
+}
+
+.beneficios h1 {
+    font-family: var(--font-title);
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.beneficios ul {
+    max-width: 800px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios li {
+    font-size: 22px;
+    color: #5f5f5f;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.beneficios li::before {
+    content: "•";
+    font-size: 28px;
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+/*SOBRE ESPELHOS*/
+.sobre-espelhos {
+    padding: 60px 80px;
+}
+
+.sobre-espelhos h1 {
+    font-family: var(--font-title);
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary);
+    font-weight: 400;
+}
+
+.sobre-espelhos p {
+    font-size: 22px;
+    color: #5f5f5f;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: justify;
+    line-height: 1.6;
+}
 
 /* CATALOGO */
 
-.catalogo{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 30px;
-    text-align: center;
+.catalogo { 
+  padding: 28px 0; 
+  text-align:center; 
+}
+.catalogo p { 
+  font-size:18px; 
+  color:var(--color-soft); 
 }
 .catalogo a{
-    color: black;
+    color: var(--primary);
+    font-weight:600;
+}
+
+/* WHATSAPP LINK */
+
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#25d366;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 20px rgba(37,211,102,0.18);
+  z-index:1600;
+  text-decoration:none;
+}
+
+/*FADE-IN*/
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all .7s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
