@@ -184,3 +184,174 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/*RESPONSIVIDADE*/
+
+/*1024px*/
+@media (max-width: 1024px) {
+
+    .header-espelhos {
+        height: 580px;
+        padding: 50px;
+    }
+
+    .header-espelhos h1 {
+        font-size: 48px;
+    }
+
+    .header-espelhos h3 {
+        font-size: 28px;
+        max-width: 600px;
+    }
+
+    .container {
+        padding: 60px;
+        gap: 30px;
+    }
+
+    .container img {
+        width: 360px;
+    }
+
+    .tabela p {
+        font-size: 20px;
+        max-width: 520px;
+    }
+
+    .beneficios,
+    .sobre-espelhos {
+        padding: 50px 60px;
+    }
+
+    .beneficios h1,
+    .sobre-espelhos h1 {
+        font-size: 36px;
+    }
+}
+
+/*768px*/
+@media (max-width: 768px) {
+
+    .header-espelhos {
+        height: 500px;
+        padding: 40px 20px;
+    }
+
+    .header-espelhos h1 {
+        font-size: 38px;
+    }
+
+    .header-espelhos h3 {
+        font-size: 22px;
+        max-width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .container img {
+        width: 50%;
+    }
+
+    .tabela p {
+        font-size: 18px;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .beneficios,
+    .sobre-espelhos {
+        padding: 50px 20px;
+    }
+
+    .beneficios h1,
+    .sobre-espelhos h1 {
+        font-size: 32px;
+    }
+
+    .beneficios li,
+    .sobre-espelhos p {
+        font-size: 18px;
+    }
+}
+
+/*480px*/
+@media (max-width: 480px) {
+
+    .header-espelhos {
+        height: 420px;
+        padding: 30px 10px;
+    }
+
+    .header-espelhos h1 {
+        font-size: 30px;
+    }
+
+    .header-espelhos h3 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 30px 10px;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .tabela p {
+        font-size: 16px;
+    }
+
+    .beneficios h1,
+    .sobre-espelhos h1 {
+        font-size: 28px;
+    }
+
+    .beneficios li,
+    .sobre-espelhos p {
+        font-size: 16px;
+    }
+
+    .catalogo p {
+        font-size: 16px;
+    }
+}
+
+/*360px*/
+@media (max-width: 360px) {
+
+    .header-espelhos h1 {
+        font-size: 26px;
+    }
+
+    .header-espelhos h3 {
+        font-size: 16px;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .tabela p {
+        font-size: 15px;
+    }
+
+    .beneficios h1,
+    .sobre-espelhos h1 {
+        font-size: 24px;
+    }
+
+    .beneficios li,
+    .sobre-espelhos p {
+        font-size: 15px;
+    }
+
+    .catalogo p {
+        font-size: 15px;
+    }
+}

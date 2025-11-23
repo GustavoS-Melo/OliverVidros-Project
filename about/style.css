@@ -6,6 +6,7 @@
 
     --color-text: #2f2f2f;
     --color-soft: #555;
+    --primary: #115b66;
 }
 
 /* HEADER */
@@ -76,7 +77,7 @@ header h3 {
     font-size: 40px;
     margin: 30px 0;
     font-weight: 600;
-    color: var(--color-text);
+    color: var(--primary);
 }
 
 .history p {
@@ -141,7 +142,7 @@ header h3 {
 
 .value-item ul li::before {
     content: "• ";
-    color: #2b59ff;
+    color: var(--primary);
     font-weight: bold;
 }
 

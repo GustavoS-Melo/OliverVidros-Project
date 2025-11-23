@@ -28,7 +28,7 @@
 .home-header .overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0,0,0,0.45);
+    background-color: rgba(0,0,0,0.545);
     z-index: 0;
 }
 
