@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-base: 'Jost', sans-serif;
+    --font-title: 'Jost', serif;
+
+    --color-text: #222;
+    --color-soft: #777;
+    --primary: #115b66;
+}
+
+.header-perfil {
+    background: url(../assets/perfils/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-perfil .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header-perfil .header-content {
+  position: relative;
+  text-align: center;
+  color: #222;
+}
+
+.header-perfil h1 {
+  font-family: var(--font-title);
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.header-perfil h3 {
+  font-family: var(--font-base);
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 15px;
+}
