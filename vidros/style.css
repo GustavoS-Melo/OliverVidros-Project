@@ -134,6 +134,7 @@
   box-shadow:0 8px 20px rgba(37,211,102,0.18);
   z-index:1600;
   text-decoration:none;
+  font-size: 20px;
 }
 
 /* FADE-IN */
