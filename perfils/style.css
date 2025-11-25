@@ -239,3 +239,263 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/*RESPONSIVIDADE*/
+
+/*1024px*/
+@media (max-width: 1024px) {
+
+    /* HEADER */
+    .header-perfil {
+        height: 420px;
+        padding: 100px 20px;
+    }
+
+    .header-perfil h1 {
+        font-size: 48px;
+    }
+
+    .header-perfil h3 {
+        font-size: 28px;
+        max-width: 600px;
+    }
+
+
+    /* INTRO */
+    .intro {
+        padding: 60px 40px;
+    }
+
+    .intro h2 {
+        font-size: 36px;
+    }
+
+    .intro p {
+        font-size: 20px;
+        max-width: 750px;
+    }
+
+
+    /* LINHAS DE PRODUTOS */
+    .cards-linhas {
+        gap: 25px;
+    }
+
+    .card-linha {
+        width: 280px;
+    }
+
+    .card-linha h3 {
+        font-size: 22px;
+    }
+
+    .card-linha p {
+        font-size: 17px;
+    }
+
+
+    /* BENEFÍCIOS */
+    .beneficios ul {
+        max-width: 700px;
+    }
+
+    .beneficios li {
+        font-size: 20px;
+    }
+
+
+    /* GALERIA */
+    .galeria-grid {
+        gap: 25px;
+    }
+
+    .galeria-grid img {
+        width: 320px;
+        height: 240px;
+    }
+}
+
+/* =============================
+      RESPONSIVIDADE 768px
+============================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header-perfil {
+        height: 360px;
+        padding: 80px 20px;
+    }
+
+    .header-perfil h1 {
+        font-size: 40px;
+    }
+
+    .header-perfil h3 {
+        font-size: 24px;
+        max-width: 500px;
+    }
+
+    /* INTRO */
+    .intro {
+        padding: 50px 30px;
+    }
+
+    .intro h2 {
+        font-size: 32px;
+    }
+
+    .intro p {
+        font-size: 18px;
+        max-width: 600px;
+    }
+
+    /* LINHAS */
+    .cards-linhas {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-linha {
+        width: 80%;
+        max-width: 380px;
+    }
+
+    /* BENEFÍCIOS */
+    .beneficios ul {
+        max-width: 600px;
+    }
+
+    .beneficios li {
+        font-size: 18px;
+    }
+
+    /* GALERIA */
+    .galeria-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .galeria-grid img {
+        width: 90%;
+        max-width: 450px;
+        height: auto;
+    }
+}
+
+/* =============================
+      RESPONSIVIDADE 480px
+============================= */
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+    .header-perfil {
+        height: 320px;
+        padding: 60px 20px;
+    }
+
+    .header-perfil h1 {
+        font-size: 32px;
+    }
+
+    .header-perfil h3 {
+        font-size: 20px;
+        max-width: 95%;
+    }
+
+    /* INTRO */
+    .intro {
+        padding: 40px 20px;
+    }
+
+    .intro h2 {
+        font-size: 26px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    /* LINHAS */
+    .card-linha {
+        width: 100%;
+    }
+
+    .card-linha h3 {
+        font-size: 20px;
+    }
+
+    .card-linha p {
+        font-size: 16px;
+    }
+
+    /* BENEFÍCIOS */
+    .beneficios li {
+        font-size: 17px;
+    }
+
+    /* GALERIA */
+    .galeria h2 {
+        font-size: 28px;
+    }
+
+    .galeria-grid img {
+        width: 100%;
+    }
+}
+
+/* =============================
+      RESPONSIVIDADE 360px
+============================= */
+
+@media (max-width: 360px) {
+
+    /* HEADER */
+    .header-perfil {
+        height: 300px;
+        padding: 50px 15px;
+    }
+
+    .header-perfil h1 {
+        font-size: 26px;
+    }
+
+    .header-perfil h3 {
+        font-size: 18px;
+    }
+
+    /* INTRO */
+    .intro h2 {
+        font-size: 22px;
+    }
+
+    .intro p {
+        font-size: 15px;
+    }
+
+    /* LINHAS */
+    .card-linha h3 {
+        font-size: 18px;
+    }
+
+    .card-linha p {
+        font-size: 15px;
+    }
+
+    /* BENEFÍCIOS */
+    .beneficios h2 {
+        font-size: 26px;
+    }
+
+    .beneficios li {
+        font-size: 15px;
+    }
+
+    /* GALERIA */
+    .galeria h2 {
+        font-size: 24px;
+    }
+}

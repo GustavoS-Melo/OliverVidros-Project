@@ -61,20 +61,21 @@
         <div class="form contato-form">
             <h1>Entre em contato</h1>
 
-            <form action="">
+            <form method="post">
+
                 <label for="name">Nome</label>
-                <input id="name" type="text" placeholder="Insira seu nome" required>
+                <input id="name" name="nome" type="text" placeholder="Insira seu nome" required>
 
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="seuemail@email.com" required>
+                <input id="email" name="email" type="email" placeholder="seuemail@email.com" required>
 
                 <label for="phone">Telefone</label>
-                <input id="phone" type="text" placeholder="(XX) XXXXX-XXXX" required>
+                <input id="phone" name="telefone" type="text" placeholder="(XX) XXXXX-XXXX" required>
 
                 <label for="text">Como podemos ajudar?</label>
-                <textarea rows="7" id="text" placeholder="Descreva seu interesse ou dúvida"></textarea>
+                <textarea rows="7" name="mensagem" id="text" placeholder="Descreva seu interesse ou dúvida"></textarea>
 
-                <button class="btn-enviar">Enviar</button>
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </div>
 
