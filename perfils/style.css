@@ -5,45 +5,237 @@
     --font-title: 'Jost', serif;
 
     --color-text: #222;
-    --color-soft: #777;
+    --color-soft: #666;
     --primary: #115b66;
+    --bg-soft: #f4f4f4;
 }
 
+/* HEADER */
+
 .header-perfil {
-    background: url(../assets/perfils/bg.svg);
-    background-repeat: no-repeat;
+    background-image: url('../assets/perfils/bg.svg');
     background-size: cover;
     background-position: center;
-    height: 700px;
     padding: 70px;
+    text-align: center;
+    position: relative;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .header-perfil .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
 }
 
 .header-perfil .header-content {
-  position: relative;
-  text-align: center;
-  color: #222;
+    position: relative;
+    z-index: 2;
 }
 
 .header-perfil h1 {
-  font-family: var(--font-title);
-  font-size: 50px;
-  font-weight: 600;
-  margin: 0;
+    font-size: 64px;
+    font-weight: 400;
+    font-family: var(--font-title);
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 .header-perfil h3 {
-  font-family: var(--font-base);
-  font-size: 28px;
-  font-weight: 300;
-  margin-top: 15px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* INTRO */
+
+.intro {
+    padding: 80px 70px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 44px;
+    font-weight: 400;
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-family: var(--font-title);
+}
+
+.intro p {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--color-text);
+}
+
+/* LINHAS DE PRODUTOS */
+
+.linhas {
+    padding: 80px 70px;
+    text-align: center;
+}
+
+.linhas h2 {
+    font-size: 42px;
+    color: var(--primary);
+    margin-bottom: 40px;
+}
+
+.cards-linhas {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-linha {
+    background: #fff;
+    width: 320px;
+    border-radius: 16px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    transition: .3s ease;
+}
+
+.card-linha:hover {
+    transform: translateY(-6px);
+}
+
+.card-linha img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.card-linha h3 {
+    font-size: 24px;
+    margin: 18px 0 10px;
+    color: var(--primary);
+}
+
+.card-linha p {
+    font-size: 18px;
+    color: var(--color-soft);
+    padding: 0 20px;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios {
+    padding: 80px 70px;
+}
+
+.beneficios h2 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--primary);
+}
+
+.beneficios ul {
+    max-width: 900px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios li {
+    font-size: 22px;
+    margin-bottom: 14px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.beneficios li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -3px;
+    font-size: 28px;
+    color: var(--primary);
+}
+
+/* GALERY */
+
+.galeria {
+    padding: 80px 70px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 42px;
+    color: var(--primary);
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.galeria-grid img {
+    width: 420px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+}
+
+.galeria-grid-img:hover{
+    transform: translateY(-6px);
+    transition-duration: 0.6s;
+}
+
+/* CATALOGO */
+
+.catalogo { 
+  padding: 28px 0; 
+  text-align:center; 
+}
+.catalogo p { 
+  font-size:18px; 
+  color:var(--color-soft); 
+}
+.catalogo a{
+    color: var(--primary);
+    font-weight:600;
+}
+
+/* WHATSAPP LINK */
+
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#25d366;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 20px rgba(37,211,102,0.18);
+  z-index:1600;
+  text-decoration:none;
+  font-size: 20px;
+}
+
+/* FADE-IN */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all .7s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
