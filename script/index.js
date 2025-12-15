@@ -23,3 +23,24 @@ function checkFade() {
 
 window.addEventListener("scroll", checkFade);
 window.addEventListener("load", checkFade);
+
+// FORMULARIO EMAIL JS
+emailjs.init("NXLW-n0BeYcoaDqI7");
+
+
+document.querySelector('#contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = {
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        phone: document.querySelector('#phone').value,
+        subject: document.querySelector('#subject').value,
+        message: document.querySelector('#text').value
+    };
+
+    const serviceId = 'service_rg786pf';
+    const templateId = 'template_j5ubmze';
+
+    emailjs.send(serviceId, templateId, formData);
+});
