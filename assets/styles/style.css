@@ -299,6 +299,14 @@ h3{
     display: block;
 }
 
+.carousel.auto h1{
+    font-family: var(--font-base);
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
 /* COMENTARIOS*/
 
 .comentarios{
