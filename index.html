@@ -52,87 +52,84 @@
 </header>
 
 
-<!--LINHA DE PRODUTOS-->
+<!-- CARROSSEL MANUAL -->
+<section class="produtos-section fade-in">
 
-<section class="vidros-home fade-in">
-    <div class="content fade-in">
-        <div class="info fade-in">
-            <h1>LINHA DE PRODUTOS</h1>
-            <p>
-                De vidros tecnológicos com proteção solar a <br>
-                vidros com acabamentos sofisticados, tem <br>
-                diversas opções de produtos para transformar <br>
-                o seu projeto.
-            </p>
-        </div>
+    <!-- TEXTO -->
+    <div class="produtos-texto">
+        <h1>LINHA DE PRODUTOS</h1>
+        <p>
+            De vidros tecnológicos com proteção solar a <br>
+            vidros com acabamentos sofisticados, tem <br>
+            diversas opções de produtos para transformar <br>
+            o seu projeto.
+        </p>
     </div>
-    <div class="slider fade-in">
-        <div class="slides fade-in">
-            <!--RADIO BUTTONS-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <!--FIM RADIO BUTTONS-->
 
-            <!--SLIDE IMGS-->
-            <div class="slide first fade-in">
-                <a href="./vidros/vidros.html"><img class="img-chamada" src="./assets/home/slider1.svg" alt=""></a> 
-                <div class="text">
-                    <h3>VIDROS</h3>
-                    <p>
-                        Conheça toda nossa linha de vidros clicando AQUI. 
-                    </p>
-                </div>
-                
-            </div>
-            <div class="slide fade-in">
-                <a href="./espelhos/espelho.html"><img class="img-chamada" src="./assets/home/slide2.svg" alt=""></a> 
-                <div class="text">
-                    <h3>ESPELHOS</h3>
-                    <p>
-                        Conheça toda nossa linha de espelhos clicando AQUI.
-                    </p>
-                </div>
-            </div>
-            <div class="slide fade-in">
-                <a href="./perfils/perfil.html"><img class="img-chamada" src="./assets/home/slider3.svg" alt=""></a> 
-                <div class="text">
-                    <h3>PORTAS DE ALUMINIO</h3>
-                    <p>
-                        Conheça toda nossa linha voltada a area moveleira clicando AQUI. 
-                    </p>
-                </div>
-            </div>
-            <div class="slide fade-in">
-                <a href="./acabamentos/acabamentos.html"><img class="img-chamada" src="./assets/home/slider4.svg" alt=""></a> 
-                <div class="text">
-                    <h3>ACABAMENTOS</h3>
-                    <p>
-                        Conheça todos nossos acabamento clicando AQUI.
-                    </p>
-                </div>
-            </div>
-            <!--FIM SLIDE IMGS-->
+    <!-- CARROSSEL -->
+    <div class="produtos-carousel">
+        <div class="carousel manual">
 
-            <!--NAVIGATION AUTO-->
-            <div class="navigation-auto fade-in">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
+    <!-- BOTÃO ANTERIOR -->
+    <button class="carousel-btn prev" aria-label="Slide anterior">
+        &#10094;
+    </button>
+
+    <div class="carousel-track">
+
+        <div class="slide">
+            <img src="./assets/home/slider1.svg" alt="">
+            <div class="overlay">
+                <h2>VIDROS</h2>
+                <a href="./vidros/vidros.html">
+                    Conheça toda nossa linha de vidros clicando AQUI.
+                </a>
             </div>
         </div>
 
-        <div class="manual-navigation fade-in">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
+        <div class="slide">
+            <img src="./assets/home/slide2.svg" alt="">
+            <div class="overlay">
+                <h2>ESPELHOS</h2>
+                <a href="./espelhos/espelhos.html">
+                    Conheça toda nossa linha de espelhos clicando AQUI.
+                </a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="./assets/home/slider3.svg" alt="">
+            <div class="overlay">
+                <h2>PORTAS DE ALUMÍNIO</h2>
+                <a href="#">
+                    Conheça toda nossa linha voltada à área moveleira clicando AQUI.
+                </a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="./assets/home/slider4.svg" alt="">
+            <div class="overlay">
+                <h2>ACABAMENTOS</h2>
+                <a href="#">
+                    Conheça todos nossos acabamentos clicando AQUI.
+                </a>
+            </div>
         </div>
 
     </div>
+
+    <!-- BOTÃO PRÓXIMO -->
+    <button class="carousel-btn next" aria-label="Próximo slide">
+        &#10095;
+    </button>
+
+</div>
+    </div>
+
+    
 </section>
+
 
 <!--LINK SOBRE-->
 <section class="sobre fade-in">
@@ -153,48 +150,25 @@
 
 <!--SAIBA MAIS HOME-->
 
-<section class="saiba-mais fade-in">
-    <h1>CONHEÇA ALGUNS DOS NOSSOS SERVIÇOS</h1>
-    <div class="slider-servico fade-in">
-        <div class="slides-servico fade-in">
-            <!--RADIO BUTTONS-->
-            <input type="radio" name="radio-btn-servico" id="radio-servico1">
-            <input type="radio" name="radio-btn-servico" id="radio-servico2">
-            <input type="radio" name="radio-btn-servico" id="radio-servico3">
-            <input type="radio" name="radio-btn-servico" id="radio-servico4">
-            <!--FIM RADIO BUTTONS-->    
+<section class="carousel auto">
+    <div class="carousel-track">
 
-            <!--SLIDE IMGS-->
-            <div class="slide-servico first-servico fade-in">
-                <img class="" src="./assets/home/serviço1.svg" alt="">                
-            </div>
-            <div class="slide-servico fade-in">
-                <img class="" src="./assets/home/serviço2.svg" alt="">
-                
-            </div>
-            <div class="slide-servico fade-in">
-                <img class="" src="./assets/home/serviço3.svg" alt="">
-                
-            </div>
-            <div class="slide-servico fade-in">
-                <img class="" src="./assets/home/serviço4.svg" alt="">
-            <!--FIM SLIDE IMGS-->
-
-            <!--NAVIGATION AUTO-->
-            <div class="navigation-auto-servico">
-                <div class="auto-btn1-servico fade-in"></div>
-                <div class="auto-btn2-servico fade-in"></div>
-                <div class="auto-btn3-servico fade-in"></div>
-                <div class="auto-btn4-servico fade-in"></div>
-            </div>
-
-            <div class="manual-navigation-servico fade-in">
-                <label for="radio-servico1" class="manual-btn-servico"></label>
-                <label for="radio-servico2" class="manual-btn-servico"></label>
-                <label for="radio-servico3" class="manual-btn-servico"></label>
-                <label for="radio-servico4" class="manual-btn-servico"></label>
-            </div>
+        <div class="slide">
+            <img src="./assets/home/serviço1.svg" alt="">
         </div>
+
+        <div class="slide">
+            <img src="./assets/home/serviço2.svg" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="./assets/home/serviço3.svg" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="./assets/home/serviço4.svg" alt="">
+        </div>
+
     </div>
 </section>
 
