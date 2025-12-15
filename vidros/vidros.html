@@ -178,10 +178,23 @@
   </a>
 
 <!--CATALOGO-->
-<div class="catalogo">
+<div class="catalogo fade-in">
     <p>
-        Acesse nosso catalogo completo clicando <a href="" download="../assets/catalogo/Catalogo_Oliver_Vidros.pdf">AQUI</a>
+        Acesse nosso catálogo completo clicando
+        <button id="open-catalogo" class="link-pdf">AQUI</button>
     </p>
+</div>
+
+<div id="catalogo-modal" class="catalogo-modal">
+    <div class="catalogo-box">
+        <button class="close-catalogo" aria-label="Fechar catálogo">✕</button>
+
+        <iframe
+            src="../assets/catalogo/Catalogo_Oliver_Vidros.pdf"
+            loading="lazy"
+            title="Catálogo Oliver Vidros">
+        </iframe>
+    </div>
 </div>
 
 

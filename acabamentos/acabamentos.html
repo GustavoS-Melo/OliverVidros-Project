@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -11,24 +12,25 @@
   <link rel="stylesheet" href="../assets/styles/footerstyle.css">
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-      <a href="../index.html" class="img-logo"><img src="../assets/nav-footer-favicon/logo.png" alt="Oliver Vidros"></a>
+    <a href="../index.html" class="img-logo"><img src="../assets/nav-footer-favicon/logo.png" alt="Oliver Vidros"></a>
 
-      <div class="menu-btn" id="menu-btn">
-          <span></span><span></span><span></span>
-      </div>
+    <div class="menu-btn" id="menu-btn">
+      <span></span><span></span><span></span>
+    </div>
 
-      <ul class="nav-links" id="nav-links">
-          <li><a href="../about/about.html">Sobre nós</a></li>
-          <li><a href="../vidros/vidros.html">Vidros</a></li>
-          <li><a href="../espelhos/espelhos.html">Espelhos</a></li>
-          <li><a href="../perfils/perfil.html">Portas de alumínio</a></li>
-          <li><a href="./acabamentos.html" class="active">Acabamentos</a></li>
-          <li><a href="../contato/contato.html">Contato</a></li>
-      </ul>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../about/about.html">Sobre nós</a></li>
+      <li><a href="../vidros/vidros.html">Vidros</a></li>
+      <li><a href="../espelhos/espelhos.html">Espelhos</a></li>
+      <li><a href="../perfils/perfil.html">Portas de alumínio</a></li>
+      <li><a href="./acabamentos.html" class="active">Acabamentos</a></li>
+      <li><a href="../contato/contato.html">Contato</a></li>
+    </ul>
   </nav>
 
   <!-- HEADER -->
@@ -45,21 +47,21 @@
       <div class="container-lg">
         <h3>Bisotês, Lapidação e Cantos</h3>
         <p class="lead">
-            A lapidação é um processo utilizado para a modelagem do vidro aplicado <br>
-            às suas bordas de modo que a sua resistência seja aumentada e o corte <br>
-            seja retirado, tornando-o mais seguro ao manuseio. <br><br>
-            O acabamento de <i>bisotê</i>  confere sofisticação ao vidro ou espelho, por <br>
-            isso é muito solicitado na indústria moveleira e por profissionais da área <br>
-            de decoração. O <i>bisotê</i> refere-se a um corte chanfrado nas extremidades <br>
-            do vidro que, em seguida, recebe um polimento desenvolvendo textura <br>
-            e brilho natural. 
+          A lapidação é um processo utilizado para a modelagem do vidro aplicado <br>
+          às suas bordas de modo que a sua resistência seja aumentada e o corte <br>
+          seja retirado, tornando-o mais seguro ao manuseio. <br><br>
+          O acabamento de <i>bisotê</i> confere sofisticação ao vidro ou espelho, por <br>
+          isso é muito solicitado na indústria moveleira e por profissionais da área <br>
+          de decoração. O <i>bisotê</i> refere-se a um corte chanfrado nas extremidades <br>
+          do vidro que, em seguida, recebe um polimento desenvolvendo textura <br>
+          e brilho natural.
         </p>
         <p class="lead">
-          Quando se trabalha com vidros lapidações, <i>cantos ou bisotês</i>  bem executados <br>
-          diferenciam e destacam os bons produtos. A <strong>Oliver Vidros</strong>   está equipada com os <br>
+          Quando se trabalha com vidros lapidações, <i>cantos ou bisotês</i> bem executados <br>
+          diferenciam e destacam os bons produtos. A <strong>Oliver Vidros</strong> está equipada com os <br>
           mais modernos equipamentos de furação e lapidação de vidros. <br> <br>
           São cinco tipos de lapidações e inúmeras possibilidades de recortes de canto, <br>
-          além de furações, em vidros e espelhos à disposição de nossos clientes. 
+          além de furações, em vidros e espelhos à disposição de nossos clientes.
         </p>
       </div>
     </section>
@@ -114,7 +116,8 @@
       <div class="container-lg align-sides">
         <div class="app-text">
           <h3>Aplicações</h3>
-          <p>Utilizados em portas de móveis, tampos, espelhos decorativos, nichos e painéis. Nossos acabamentos unem estética e durabilidade.</p>
+          <p>Utilizados em portas de móveis, tampos, espelhos decorativos, nichos e painéis. Nossos acabamentos unem
+            estética e durabilidade.</p>
           <ul>
             <li>Moveleiro residencial</li>
             <li>Decoração comercial</li>
@@ -128,18 +131,27 @@
     </section>
 
     <!-- CATALOGO -->
-    <section id="catalogo" class="catalogo fade-in">
-      <div class="container-lg">
-        <p>
-          Acesse nosso catálogo completo clicando
-          <a class="catalog-link" href="../assets/catalogo/Catalogo_Oliver_Vidros.pdf" download> AQUI</a>
-        </p>
+    <div class="catalogo fade-in">
+      <p>
+        Acesse nosso catálogo completo clicando
+        <button id="open-catalogo" class="link-pdf">AQUI</button>
+      </p>
+    </div>
+
+    <div id="catalogo-modal" class="catalogo-modal">
+      <div class="catalogo-box">
+        <button class="close-catalogo" aria-label="Fechar catálogo">✕</button>
+
+        <iframe src="../assets/catalogo/Catalogo_Oliver_Vidros.pdf" loading="lazy" title="Catálogo Oliver Vidros">
+        </iframe>
       </div>
-    </section>
+    </div>
   </main>
 
   <!-- WHATSAPP LINK -->
-  <a target ="_blank" href="https://wa.me/5541997302744?text=Olá, vim através de seu site e gostaria de mais informações sobre seus produtos" class="whatsapp-float" aria-label="WhatsApp">
+  <a target="_blank"
+    href="https://wa.me/5541997302744?text=Olá, vim através de seu site e gostaria de mais informações sobre seus produtos"
+    class="whatsapp-float" aria-label="WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
@@ -179,8 +191,9 @@
   </footer>
 
   <!-- SCRIPTS -->
-  <script src="../script/index.js"></script> 
+  <script src="../script/index.js"></script>
   <script src="https://kit.fontawesome.com/af0ad01426.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

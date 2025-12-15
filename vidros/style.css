@@ -112,9 +112,90 @@
   font-size:18px; 
   color:var(--color-soft); 
 }
-.catalogo a{
-    color: var(--primary);
-    font-weight:600;
+
+.link-pdf {
+    background: none;
+    border: none;
+    color: #115b66;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+}
+
+.link-pdf:hover {
+    opacity: 0.8;
+}
+
+.pdf-container {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 80vh;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.catalogo-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.catalogo-modal.active {
+    display: flex;
+}
+
+.catalogo-box {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    animation: zoomIn 0.3s ease;
+}
+
+.catalogo-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-catalogo {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* WHATSAPP LINK */
