@@ -43,11 +43,35 @@ footer a {
     align-items: center;
 }
 
-.logo ul li {
-    font-size: 30px;
+.footer-social-links {
+    display: flex;
+    gap: 20px;
 }
 
+.footer-social-links a {
+    font-size: 24px;
+    transition: 0.3s ease;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff15;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
 
+.footer-social-links a[aria-label="Instagram"] i {
+    color: #da5597;
+}
+
+/* Hover */
+.footer-social-links a:hover {
+    transform: translateY(-4px);
+    opacity: 0.8;
+}
 
 /* COLUNA 2 E 3 - LINKS */
 .links, .links2 {
