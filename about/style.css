@@ -159,6 +159,146 @@ header h3 {
     transform: translateY(0);
 }
 
+/* CATALOGO */
+
+.catalogo { 
+  padding: 28px 0; 
+  text-align:center; 
+}
+.catalogo p { 
+  font-size:18px; 
+  color:var(--color-soft); 
+}
+
+.link-pdf {
+    background: none;
+    border: none;
+    color: #115b66;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+}
+
+.link-pdf:hover {
+    opacity: 0.8;
+}
+
+.pdf-container {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 80vh;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.catalogo-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.catalogo-modal.active {
+    display: flex;
+}
+
+.catalogo-box {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    animation: zoomIn 0.3s ease;
+}
+
+.catalogo-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-catalogo {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*Whatsapp link*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    animation: blink 2.3s infinite ease-in-out;
+}
+
+/* Keyframe for whats link */
+@keyframes blink {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* hover effect */
+.whatsapp-float:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
 /* WHATSAPP LINK */
 
 .whatsapp-float {
