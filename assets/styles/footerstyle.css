@@ -19,6 +19,10 @@ footer a {
     max-width: 1200px;
     margin: 0 auto;
 }
+.content-social{
+    display: flex;
+    gap: 20px;
+}
 
 /* COLUNA 1 - LOGO */
 .logo {
@@ -65,6 +69,10 @@ footer a {
 
 .footer-social-links a[aria-label="Instagram"] i {
     color: #da5597;
+}
+
+.footer-social-links a[aria-label="Facebook"] i {
+    color: #628af7;
 }
 
 /* Hover */
