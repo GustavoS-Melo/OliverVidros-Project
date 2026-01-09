@@ -52,7 +52,7 @@ function closeModal() {
     document.body.style.overflow = '';
 }
 
-// Função para ...
+// Bot para recepção do usuário (codigo vindo do cliente)
 
 (function (d, t) {
     var BASE_URL = "http://72.62.104.162:3000";
