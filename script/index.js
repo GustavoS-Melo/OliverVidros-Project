@@ -51,3 +51,19 @@ function closeModal() {
     modalCatalogo.classList.remove('active');
     document.body.style.overflow = '';
 }
+
+// Função para ...
+
+(function (d, t) {
+    var BASE_URL = "http://72.62.104.162:3000";
+    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    g.src = BASE_URL + "/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g, s);
+    g.onload = function () {
+        window.chatwootSDK.run({
+            websiteToken: 'ZhosnWqDBti4QW9nngxT4zKq',
+            baseUrl: BASE_URL
+        })
+    }
+})(document, "script");
