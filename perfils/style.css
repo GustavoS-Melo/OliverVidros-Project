@@ -161,36 +161,40 @@
 }
 
 /* GALERY */
-
-.galeria {
-    padding: 80px 70px;
-    text-align: center;
+/* CARROSSEL AUTOMÁTICO */
+.carousel.auto {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
 }
 
-.galeria h2 {
+.carousel.auto .carousel-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel.auto .slide {
+    min-width: 100%;
+}
+
+.carousel.auto img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.carousel h2 {
     font-size: 42px;
     color: var(--primary);
     margin-bottom: 40px;
+    text-align: center;
 }
 
-.galeria-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.galeria-grid img {
-    width: 420px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 14px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
-}
-
-.galeria-grid-img:hover{
-    transform: translateY(-6px);
-    transition-duration: 0.6s;
-}
 
 /* CATALOGO */
 
