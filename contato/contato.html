@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="../assets/styles/footerstyle.css">
     <link rel="stylesheet" href="./style.css">
     <!--SCRIPT FORMULARIO EMAILJS-->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 </head>
 
@@ -52,71 +51,92 @@
 
     <!--FORMULARIO-->
 
-<section class="contato-wrapper">
-    <div class="formulario">
+    <section class="contato-wrapper">
+        <div class="formulario">
 
-        <!-- FORM -->
-        <div class="form contato-form">
-            <h1>Entre em contato</h1>
+            <!-- FORM -->
+            <div class="form contato-form">
+                <h1>Entre em contato</h1>
 
-            <form method="post" id="contact-form">
+                <form method="post" id="contact-form">
 
-                <label for="name">Nome</label>
-                <input id="name" name="name" type="text" placeholder="Insira seu nome" required>
+                    <label for="name">Nome</label>
+                    <input id="name" name="name" type="text" placeholder="Insira seu nome" required>
 
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="seuemail@email.com" required>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="seuemail@email.com" required>
 
-                <label for="phone">Telefone</label>
-                <input id="phone" name="phone" type="text" placeholder="(XX) XXXXX-XXXX" required>
+                    <label for="phone">Telefone</label>
+                    <input id="phone" name="phone" type="text" placeholder="(XX) XXXXX-XXXX" required>
 
-                <label for="subject">Assunto</label>
-                <input type="text" id="subject" name="subject" placeholder="Descreva seu interesse ou dúvida" required>
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="Descreva seu interesse ou dúvida"
+                        required>
 
-                <label for="message">Como podemos ajudar?</label>
-                <textarea rows="7" name="message" id="text" placeholder="Deixe sua mensagem ou sugestão"></textarea>
+                    <label for="message">Como podemos ajudar?</label>
+                    <textarea rows="7" name="message" id="text" placeholder="Deixe sua mensagem ou sugestão"></textarea>
 
-                <button type="submit" class="btn-enviar">Enviar</button>
-            </form>
-        </div>
-
-        <!-- MAPA -->
-        <div class="form-map contato-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8083171394633!2d-49.162462700000006!3d-25.4446712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcef79b6ac80dd%3A0x76ec5dd3480bc1af!2sOliver%20Vidros!5e0!3m2!1spt-BR!2sbr!4v1748367524701!5m2!1spt-BR!2sbr"
-                allowfullscreen="" 
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-            <div class="map-info">
-                <p>
-                    <br><br>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Endereço: R. Maysa Matarazzo 469 - Maria Antonieta, Pinhais - PR, 83331-200 <br>
-                    <br>
-                    <i class="fa-solid fa-phone"></i>
-                    Telefone: (41) 3669-7178
-                </p>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
             </div>
+
+            <!-- MAPA -->
+            <div class="form-map contato-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8083171394633!2d-49.162462700000006!3d-25.4446712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcef79b6ac80dd%3A0x76ec5dd3480bc1af!2sOliver%20Vidros!5e0!3m2!1spt-BR!2sbr!4v1748367524701!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="map-info">
+                    <p>
+                        <br><br>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Endereço: R. Maysa Matarazzo 469 - Maria Antonieta, Pinhais - PR, 83331-200 <br>
+                        <br>
+                        <i class="fa-solid fa-phone"></i>
+                        Telefone: (41) 3669-7178
+                    </p>
+                </div>
+            </div>
+
         </div>
+    </section>
 
+    <!--Mensagem de sucesso (formulario)-->
+    <div id="success-screen" class="success-screen">
+        <div class="success-box">
+            <h2>Mensagem enviada com sucesso!</h2>
+            <p>Obrigado por entrar em contato conosco, iremos retornar o mais breve possivel! Você será redirecionado
+                para a página inicial.</p>
+            <span>Redirecionando...</span>
+        </div>
     </div>
-</section>
 
-<!--Mensagem de sucesso (formulario)-->
-<div id="success-screen" class="success-screen">
-    <div class="success-box">
-        <h2>Mensagem enviada com sucesso!</h2>
-        <p>Obrigado por entrar em contato conosco, iremos retornar o mais breve possivel! Você será redirecionado para a página inicial.</p>
-        <span>Redirecionando...</span>
+        <!-- CATALOGO -->
+    <div class="catalogo fade-in">
+      <p>
+        Acesse nosso catálogo completo clicando
+        <button id="open-catalogo" class="link-pdf">AQUI</button>
+      </p>
     </div>
-</div>
-    
-<!-- WHATSAPP LINK -->
-  <a target ="_blank" href="https://wa.me/5541997302744?text=Olá, vim através de seu site e gostaria de mais informações sobre seus produtos" class="whatsapp-float" aria-label="WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+
+    <div id="catalogo-modal" class="catalogo-modal">
+      <div class="catalogo-box">
+        <button class="close-catalogo" aria-label="Fechar catálogo">✕</button>
+
+        <iframe src="../assets/catalogo/Catalogo_Oliver_Vidros.pdf" loading="lazy" title="Catálogo Oliver Vidros">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- WHATSAPP LINK -->
+    <div class="whatsapp fade-in">
+        <a target="_blank"
+            href="https://wa.me/554136697178?text=Olá, vim através de seu site e gostaria de mais informações sobre seus produtos"
+            class="whatsapp-fixed" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i> Nosso WhatsApp
+        </a>
+    </div>
 
     <!--FOOTER-->
     <footer>
@@ -131,15 +151,14 @@
                 <div class="content-social">
 
                     <div class="footer-social-links">
-                        <a href="https://www.instagram.com/olivervidros/" target="_blank" 
-                            aria-label="Instagram">
+                        <a href="https://www.instagram.com/olivervidros/" target="_blank" aria-label="Instagram">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </div>
 
                     <div class="footer-social-links">
-                        <a href="https://web.facebook.com/profile.php?id=100063612040125" 
-                            target="_blank" aria-label="Facebook">
+                        <a href="https://web.facebook.com/profile.php?id=100063612040125" target="_blank"
+                            aria-label="Facebook">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
                     </div>
@@ -147,7 +166,7 @@
                 </div>
 
             </div>
-            
+
             <div class="links">
                 <ul>
                     <li><a href="../about/about.html">SOBRE</a></li>

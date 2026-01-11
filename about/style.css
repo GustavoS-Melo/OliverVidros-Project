@@ -299,24 +299,20 @@ header h3 {
     transition: 0.3s;
 }
 
-/* WHATSAPP LINK */
-
-.whatsapp-float {
-  position: fixed;
-  right: 22px;
-  bottom: 22px;
-  width:56px;
-  height:56px;
-  border-radius:50%;
-  background:#25d366;
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 8px 20px rgba(37,211,102,0.18);
-  z-index:1600;
-  text-decoration:none;
-  font-size: 20px;
+/*Whatsapp link*/
+.whatsapp{
+    margin: 20px auto;
+    text-align: center;
+}
+.whatsapp-fixed {
+    padding: 10px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    animation: blink 3.3s infinite ease-in-out;
+    border-radius: 5px;
 }
 
 /* RESPONSIVIDADE */

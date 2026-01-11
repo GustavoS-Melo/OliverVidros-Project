@@ -281,6 +281,23 @@
     z-index: 2;
 }
 
+/*Whatsapp link*/
+.whatsapp {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.whatsapp-fixed {
+	padding: 10px;
+	background-color: #25D366;
+	color: #fff;
+	font-size: 32px;
+	text-decoration: none;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+	animation: blink 3.3s infinite ease-in-out;
+	border-radius: 5px;
+}
+
 @keyframes zoomIn {
     from {
         opacity: 0;
@@ -290,26 +307,6 @@
         opacity: 1;
         transform: scale(1);
     }
-}
-
-/*Whatsapp link*/
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-    text-decoration: none;
-    z-index: 9999;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    animation: blink 2.3s infinite ease-in-out;
 }
 
 /* Keyframe for whats link */
